@@ -42,32 +42,28 @@ export const StyledComponent = styled.div`
                 border-radius: 8px;
             }
             ${mq} {
-                display: none;
-                ${props => props.open && `
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-end;
-                    position: fixed;
-                    top: 0;
-                    right: 0;
-                    z-index: 10;
-                    background-color: limegreen;
-                    opacity: 0.9;
-                    padding: 0 16px;
-                    height: 100vh;
-
-                    transform: ${({ open }) => open ? "translateX(0%)" : "translateX(100%)"};
-                    transition: transform .3s;
-                    li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                position: fixed;
+                top: 0;
+                right: 0;
+                z-index: 10;
+                background-color: limegreen;
+                opacity: 0.9;
+                padding: 0 16px;
+                height: 100vh;
+                transform: ${props => props.open ? "translateX(0%)" : "translateX(100%)"};
+                transition: transform .3s;
+                li {
                         font-size: 22px;
                         padding: 12px 0;
                     }
-                    button {
-                        background-color: orange;
-                        margin: 12px;
-                    }
-                `}
+                button {
+                    background-color: orange;
+                    margin: 12px;
+                }
             }
         }
     }
