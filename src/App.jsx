@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { GlobalStyle } from "./GlobalStyle"
-import Layout from "./Layout"
+import Layout from "./components/Layout"
 import Top from "./Top"
 import About from "./About"
 import Contents from "./Contents"

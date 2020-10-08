@@ -1,20 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
+// images
 import top_view from "./images/undraw_team_spirit_hrr4.png"
 import section_view1 from "./images/orange-one-human.png"
 import section_view2 from "./images/red-one-human.png"
 import section_view3 from "./images/three-humans.png"
+// components
+import Section from "./components/Section"
+import TopView from "./components/TopView"
 
 function Contact() {
     return (
         <StyledComponent>
-            <div className="top-view">
-                <div className="top-view-text">
-                    <h2>CONTACT</h2>
-                    <h3>なにかできることはありますか？</h3>
-                </div>
-                <img src={top_view} />
-            </div>
+            <TopView
+                title="CONTACT"
+                subtitle="なにかできることはありますか？"
+                img={top_view}
+            />
             <section>
                 <img src={section_view1} />
                 <div className="text-box">

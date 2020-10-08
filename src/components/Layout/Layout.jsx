@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { StyledComponent } from "./Layout.styled"
-import logo from "../images/flame-1049.png"
+import logo from "../../images/flame-1049.png"
 
 function Layout({ children }) {
   return (

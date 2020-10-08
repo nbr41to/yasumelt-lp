@@ -1,53 +1,61 @@
 import React from 'react'
 import styled from 'styled-components'
+// images
 import top_view from "./images/undraw_react_y7wq.png"
-import section_view1 from "./images/orange-one-human.png"
-import section_view2 from "./images/red-one-human.png"
-import section_view3 from "./images/three-humans.png"
+import section_view1 from "./images/undraw_Group_chat_re_frmo.png"
+import section_view2 from "./images/undraw_professor_8lrt.png"
+import section_view3 from "./images/data-processing-illustration-concept.jpg"
+// components
+import Section from "./components/Section"
+import SectionTitle from "./components/SectionTitle"
+import TopView from "./components/TopView"
 
 function Contents() {
     return (
         <StyledComponent>
-            <div className="top-view">
-                <div className="top-view-text">
-                    <h2>CONTENTS</h2>
-                    <h3>それぞれにあった学び方</h3>
-                </div>
-                <img src={top_view} />
-            </div>
-            <section>
-                <img src={section_view2} />
-                <div className="text-box">
-                    <h3>学びの土台の提供</h3>
+            <TopView
+                title="CONTENTS"
+                subtitle="それぞれにあった学び方"
+                img={top_view}
+            />
+            <Section
+                subtitle="学びの土台の提供"
+                imgComp={section_view1}
+            >
+                <ul>
                     <li>Slackを用いたコミュニティ</li>
                     <li>一緒に学ぶ仲間ができる</li>
                     <li>プログラミングの勉強方法を知る</li>
                     <li>読書グループで定期的なアウトプットや刺激を</li>
                     <li>やる気のある人ほど成長する環境</li>
-                </div>
-            </section>
-            <section>
-                <div className="text-box">
-                    <h3>エンジニア育成</h3>
+                </ul>
+            </Section>
+            <Section
+                subtitle="エンジニア育成"
+                imgComp={section_view2}
+                imgRight={true}
+            >
+                <ul>
                     <li>基本講座（HTML/CSS/JavaScript/React）</li>
                     <li>現役エンジニアに質問し放題</li>
                     <li>実務レベルの開発し放題</li>
                     <li>キャリア相談</li>
                     <li>サポートつきで実際の案件をこなせる</li>
-                </div>
-                <img src={section_view3} />
-            </section>
-            <section>
-                <img src={section_view1} />
-                <div className="text-box">
-                    <h3>最先端の知識の実践</h3>
+                </ul>
+            </Section>
+            <Section
+                subtitle="最先端の知識の実践"
+                imgComp={section_view3}
+            >
+                <ul>
                     <li>脳科学や心理学に基づいた勉強法の実践</li>
                     <li>コミュニティ内で最先端の情報を入手し,それらを実践できる</li>
                     <li>挫折のしにくい仕組み作り</li>
                     <li>本の読み放題制度</li>
-                </div>
-            </section>
-            <h2 className="section-title">PLAN</h2>
+                </ul>
+            </Section>
+
+            <SectionTitle title="PLAN" />
             <div className="contents-plan">
                 <h3>Engineer Lite【月額980円】</h3>
                 <ul>
@@ -75,65 +83,29 @@ function Contents() {
                 </ul>
                 上記の2つのコースでは,このプランが含まれます.
             </div>
-            <h2 className="section-title">PRODUCT</h2>
-
-
-
+            <SectionTitle title="PRODUCT" />
+            <div className="contents-plan">
+                <h3>プログラミング基本講座</h3>
+                <ul>
+                    <li>Reactを学ぶための基本講座</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <h3>React講座</h3>
+                <ul>
+                    <li>実務レベルのReactを学ぶ講座</li>
+                    <li>React</li>
+                    <li>React Hooks</li>
+                    <li>Firebase</li>
+                </ul>
+            </div>
         </StyledComponent>
     )
 }
 
 const StyledComponent = styled.div`
-    .top-view {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .top-view-text {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                font-family : 'Arial' ,sans-serif;
-            h2 {
-                margin: 10px;
-                &:before, &:after {
-                    content: '-';
-                    margin: 0 8px;
-                }
-            }
-        }
-        img {
-            width: 50%;
-        }
-    }
-    .section-title {
-        font-family : 'Arial' ,sans-serif;
-        margin: 30px 0 20px 30px;
-        padding-bottom: 8px;
-        border-bottom: 1px solid #ccc;
-        &:before {
-            content: '＊';
-            margin-right: 8px;
-        }
-    }
-    section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px;
-        img {
-            max-width: 400px;
-            max-height: 400px;
-            margin: 12px;
-        }
-        .text-box {
-            padding: 12px;
-            margin:12px;
-            h3 {
-                margin: 8px 0;
-            }
-        }
-    }
+    
     .contents-plan {
         margin: 20px;
         border: 1px solid #444;
