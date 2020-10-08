@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.js": "/static/js/main.a56f6d9c.chunk.js",
+    "main.js.map": "/static/js/main.a56f6d9c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4ad34d45.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4ad34d45.js.map",
+    "static/js/2.d8b5cde4.chunk.js": "/static/js/2.d8b5cde4.chunk.js",
+    "static/js/2.d8b5cde4.chunk.js.map": "/static/js/2.d8b5cde4.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.982e2035571387444a0fd7383de9e6d7.js": "/precache-manifest.982e2035571387444a0fd7383de9e6d7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.d8b5cde4.chunk.js.LICENSE.txt": "/static/js/2.d8b5cde4.chunk.js.LICENSE.txt",
+    "static/media/clip-reading-of-books-1.png": "/static/media/clip-reading-of-books-1.48d858df.png",
+    "static/media/clip-remote-work-1.png": "/static/media/clip-remote-work-1.63ce9e8e.png",
+    "static/media/developer-team.png": "/static/media/developer-team.6eb52e6b.png",
+    "static/media/flame-1049.png": "/static/media/flame-1049.34be3403.png",
+    "static/media/gummy-programming.png": "/static/media/gummy-programming.813e6a26.png",
+    "static/media/orange-one-human.png": "/static/media/orange-one-human.6bdb62b4.png",
+    "static/media/red-one-human.png": "/static/media/red-one-human.19d5a08e.png",
+    "static/media/three-humans.png": "/static/media/three-humans.2e90b333.png",
+    "static/media/undraw_pair_programming_njlp.png": "/static/media/undraw_pair_programming_njlp.775814e0.png",
+    "static/media/undraw_react_y7wq.png": "/static/media/undraw_react_y7wq.d8b7db80.png",
+    "static/media/undraw_team_spirit_hrr4.png": "/static/media/undraw_team_spirit_hrr4.bb50d063.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ad34d45.js",
+    "static/js/2.d8b5cde4.chunk.js",
+    "static/js/main.a56f6d9c.chunk.js"
+  ]
+}
