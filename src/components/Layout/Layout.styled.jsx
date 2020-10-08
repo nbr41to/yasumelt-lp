@@ -1,4 +1,5 @@
 import styled from "styled-components"
+const mq = "@media (max-width:700px)"
 
 export const StyledComponent = styled.div`
     header {
@@ -8,6 +9,10 @@ export const StyledComponent = styled.div`
         background-color: #0D184B;
         color: white;
         padding: 4px 8px;
+        ${mq} {
+            justify-content: center;
+            /* padding-left: 60px; */
+        }
         .site-logo {
             display: flex;
             justify-content: center;
@@ -35,6 +40,34 @@ export const StyledComponent = styled.div`
                 font-weight: bold;
                 border: 1px solid #444;
                 border-radius: 8px;
+            }
+            ${mq} {
+                display: none;
+                ${props => props.open && `
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    z-index: 10;
+                    background-color: limegreen;
+                    opacity: 0.9;
+                    padding: 0 16px;
+                    height: 100vh;
+
+                    transform: ${({ open }) => open ? "translateX(0%)" : "translateX(100%)"};
+                    transition: transform .3s;
+                    li {
+                        font-size: 22px;
+                        padding: 12px 0;
+                    }
+                    button {
+                        background-color: orange;
+                        margin: 12px;
+                    }
+                `}
             }
         }
     }
