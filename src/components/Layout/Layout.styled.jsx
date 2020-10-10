@@ -31,11 +31,12 @@ export const StyledComponent = styled.div`
                 font-weight: bold;
                 padding: 10px;
             }
-            button {
+            .signup-button {
                 background-color: yellowgreen;
                 color: white;
                 padding: 8px 12px;
                 margin: 0 12px;
+                font-family: 'Arial' ,sans-serif;
                 font-size: 16px;
                 font-weight: bold;
                 border: 1px solid #444;
@@ -60,7 +61,7 @@ export const StyledComponent = styled.div`
                         font-size: 22px;
                         padding: 12px 0;
                     }
-                button {
+                .signup-button {
                     background-color: orange;
                     margin: 12px;
                 }

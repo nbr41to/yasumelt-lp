@@ -14,13 +14,19 @@ function Contact() {
                 subtitle="なにかできることはありますか？"
                 img={top_view}
             />
-
+            <div className="contact">
+                <h2>お問い合わせはこちら</h2>
+                <p>Email:<a>xxx@example.com</a></p>
+            </div>
         </StyledComponent>
     )
 }
 
 const StyledComponent = styled.div`
-    
+    .contact {
+        padding: 12px;
+        text-align: center;
+    }
 `
 
 export default Contact

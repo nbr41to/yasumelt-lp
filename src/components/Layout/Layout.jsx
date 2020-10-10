@@ -18,7 +18,7 @@ function Layout({ children }) {
           <li><Link to="about">ABOUT</Link></li>
           <li><Link to="contents">CONTENTS</Link></li>
           <li><Link to="contact">CONTACT</Link></li>
-          <button>メンバーになる</button>
+          <Link className="signup-button" to="/registration">メンバーになる</Link>
         </ul>
         <Burger open={open} setOpen={setOpen} />
       </header>

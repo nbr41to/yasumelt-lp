@@ -6,7 +6,7 @@ export const StyledComponent = styled.section`
     flex-direction: ${props => props.imgRight ? "row-reverse" : "row"};
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 20px 30px;
     ${props => props.imgCircle ?
         `
             img {
@@ -40,18 +40,35 @@ export const StyledComponent = styled.section`
         padding: 12px;
         margin:12px;
         ${mq} {
-            padding: 4px;
-            margin: 4px;
+            margin: 8px;
             h2, h3 {
                 text-align: center;
             }
         }
         h2 {
             font-family : 'Arial' ,sans-serif;
+            font-weight: bold;
+            border-bottom: double 6px #0D184B;
             margin: 12px 0;
         }
         h3 {
-            margin: 8px 0;
+            display: inline-block;
+            font-family : 'Arial' ,sans-serif;
+            margin: 12px 0;
+            position: relative;
+            padding: 10px 20px;
+            border: 2px solid #000;
+            &:before {
+                background: #C9E6FF;
+                position: absolute;
+                top: 4px;
+                left: 7px;
+                z-index: -10;
+                transform: rotate(-1deg);
+                width: 100%;
+                height: 100%;
+                content: '';
+            }
         }
         ul {
             padding-left: 20px;

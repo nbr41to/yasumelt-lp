@@ -6,6 +6,7 @@ import Top from "./Top"
 import About from "./About"
 import Contents from "./Contents"
 import Contact from "./Contact"
+import Registration from "./Registration"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/about' component={About} />
           <Route path='/contents' component={Contents} />
           <Route path='/contact' component={Contact} />
+          <Route path='/registration' component={Registration} />
         </Switch>
       </Layout>
     </BrowserRouter>
