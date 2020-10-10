@@ -11,7 +11,7 @@ function Layout({ children }) {
       <header>
         <div className="site-logo">
           <img src={logo} width="30px" height="30px" />
-          <h1>reset-button</h1>
+          <Link to="/"><h1>reset-button</h1></Link>
         </div>
         <ul>
           <li><Link to="/">TOP</Link></li>

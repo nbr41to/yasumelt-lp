@@ -20,6 +20,10 @@ export const StyledComponent = styled.div`
             img {
                 margin: 10px;
             }
+            a {
+                text-decoration: none;
+                color: white;
+            }
         }
         ul {
             display: flex;
